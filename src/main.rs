@@ -12,11 +12,8 @@ struct PythonVersion {
 }
 
 impl PythonVersion {
-    pub fn new(sem_ver: SemVer, version_data: String) -> Self {
-        PythonVersion {
-            sem_ver,
-            path: version_data,
-        }
+    pub fn new(sem_ver: SemVer, path: String) -> Self {
+        PythonVersion { sem_ver, path }
     }
 }
 
